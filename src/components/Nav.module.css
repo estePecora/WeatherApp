@@ -1,11 +1,25 @@
 .navbarContainer {
     background-color: grey;
-    padding: 15px;
+    padding: 50px 30px 50px 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.searchContainer {
+    padding: 30px;
+
+}
+
+.textContainer {
+    text-align: left;
 }
 
 .title {
+    font-size: 40px;
+    color:white;
+}
+
+.secondtext {
     font-size: 20px;
     color:white;
 }

@@ -6,8 +6,7 @@ export default function Footer (){
     return (
         <div className={style.footerContainer}>
            <div className={style.footer}>
-            <p>About us</p>
-            <p>Info</p>
+            <p>Built by Estefania Pecora using React</p>
            </div>
         </div>
     )

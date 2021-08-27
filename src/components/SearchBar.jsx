@@ -14,13 +14,13 @@ export default function SearchBar({onSearch}) {
     }}>
       <input 
         type="text"
-        placeholder="Ciudad..."
+        placeholder="Enter city name..."
         value={city}
         onChange={event => setCity(event.target.value)}
         className={style.input}
       />
       <input 
-      type="submit" value="Agregar"
+      type="submit" value="Search"
       className={style.button}
       />
     </form>

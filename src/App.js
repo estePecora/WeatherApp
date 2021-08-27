@@ -3,8 +3,8 @@ import './App.css';
 import Nav from './components/Nav.jsx';
 import Cards from './components/Cards.jsx'
 import Footer from './components/Footer.jsx'
+const  {REACT_APP_APIKEY} = process.env
 
-const apiKey = '9de5b5b7e7e9140f9e85cff996d581fe'
 
 function App() {
   const [cities, setCities] = useState([]);
@@ -14,7 +14,7 @@ function App() {
   }
 
     function onSearch(ciudad) {
-      fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric`)
+      fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${REACT_APP_APIKEY}&units=metric`)
       .then(r => r.json())
       .then((recurso) => {
         if(recurso.main !== undefined){
@@ -33,7 +33,7 @@ function App() {
           };
           setCities(oldCities => [...oldCities, ciudad]);
         } else {
-          alert("Ciudad no encontrada");
+          alert("City not found");
         }
       });
 
