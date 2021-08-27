@@ -1,0 +1,49 @@
+
+
+.cardcontainer{
+    background-color: cadetblue;;
+    display:flex;
+    flex-direction: column;
+    max-width: 250px;
+    color: rgb(255, 255, 255);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 1rem;
+    border-radius: 0 20px 0 20px;
+    
+    
+}
+
+.closebutton {
+    font-size: 1em;
+    color:rgb(255, 255, 255);
+    display:flex;
+    justify-content: center;
+    margin-left: 180px;
+    max-width: 30px;
+    max-height: 30px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    
+}
+
+.innercontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.minmax {
+    display:flex;
+    align-self: center;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+p {
+    padding-top: 10px;
+}

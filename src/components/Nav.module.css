@@ -1,0 +1,11 @@
+.navbarContainer {
+    background-color: grey;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 20px;
+    color:white;
+}
